@@ -92,7 +92,8 @@ public class HangThucPham {
 	public boolean hetHan() {
 		return ngayhethan.isBefore(LocalDate.now()) ? true : false;
 	}
-
+	
+	// Topic
 	public static String getTieuDe() {
 		return String.format("%-15s%-15s%-20s%-20s%-20s%-10s", "Mã_hàng", "Tên_hàng", "Đơn_giá", "Ngày_Sản_Xuất",
 				"Ngày_Hết_Hạn", "Ghi_chú");
