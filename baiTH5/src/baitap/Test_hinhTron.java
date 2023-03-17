@@ -1,0 +1,32 @@
+package baitap;
+
+import java.util.Scanner;
+
+public class Test_hinhTron {
+
+ 
+//	public static void main(String[] args) {
+//		HinhTron h1 = new HinhTron(null, 0, 0, new ToaDo("O", 5,5),10.5);
+//		System.out.println(HinhTron.getTieuDe());
+//		System.out.println(h1.toString());
+//	}
+
+	private static Scanner sc;
+
+	public static void main(String[] args) throws Exception {
+		sc = new Scanner(System.in);
+		System.out.println("nhap ten hinh tron: ");
+		String tenHinhTron = sc.nextLine();
+		System.out.println("nhap toa do x: ");
+		float a = sc.nextFloat();
+		System.out.println("nhap toa do y: ");
+		float b = sc.nextFloat();
+		System.out.println("nhap ban kinh: ");
+		double banKinh = sc.nextDouble();
+		
+		// print
+		HinhTron h1 = new HinhTron(tenHinhTron, a, b, new ToaDo(tenHinhTron, a,b),banKinh);
+		System.out.println(HinhTron.getTieuDe());
+		System.out.println(h1.toString());
+	}
+}
