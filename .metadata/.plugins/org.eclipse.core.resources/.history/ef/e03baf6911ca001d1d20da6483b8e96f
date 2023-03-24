@@ -1,0 +1,70 @@
+package bai3;
+
+public class TamGiac {
+	public double ma,mb,mc;
+
+	
+	// package
+	public double getMa() {
+		return ma;
+	}
+
+	public void setMa(double ma) {
+		if(ma>0) {
+			
+		}else throw new Exception("phai lon hon 0");
+		this.ma = ma;
+	}
+
+	public double getMb() {
+		return mb;
+	}
+
+
+	public void setMb(double mb) {
+if(ma>0) {
+			
+		}else throw new Exception("phai lon hon 0");
+		this.mb = mb;
+	}
+
+
+	public double getMc() {
+		return mc;
+	}
+
+
+	public void setMc(double mc) {
+if(ma>0) {
+			
+		}else throw new Exception("phai lon hon 0");
+		this.mc = mc;
+	}
+
+	// contructor
+	public TamGiac() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public TamGiac(double ma, double mb, double mc) {
+		super();
+		this.ma = ma;
+		this.mb = mb;
+		this.mc = mc;
+	}
+	// tieu de
+	public static String getTieuDe() {
+		return String.format("|%-15s|%-10s|%-15s|%-15s|%-15s|","MA SV", "HO TEN", "Diem LT", "Diem TH", "DIEM trung binh");
+	}
+	
+	
+	// toString
+	@Override
+	public String toString() {
+		String s = "";
+		s+=String.format("|%-15s|%-10s|%-15f|%-15f|%-15f|", getMaSinhVien(), getHoTen(), getDiemLT(), getDiemTH(), avg());
+		return s;
+	}
+}

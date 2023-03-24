@@ -1,0 +1,66 @@
+package bai9;
+
+import java.util.Arrays;
+
+public class DanhSachCongNhan {
+	private CongNhan[] ls;
+	int count;
+	
+	public DanhSachCongNhan(int n){
+		ls = new CongNhan[n];
+		count = 0;
+	}
+	
+	// check array empty
+	public void check_array_empty() {
+		if(count == ls.length) {
+			CongNhan[] tam = new CongNhan[ls.length*2];
+			System.arraycopy(ls, 0, tam, 0, count);
+			ls = tam;
+		}
+	}
+	
+	// danh sach
+	public CongNhan[] getDanhSach() {
+		return ls;
+	}
+	// add CN
+	public boolean themCN(CongNhan cn_new) {
+		//check_array_empty();
+		for (int i=0;i<count;i++) {
+			if(cn_new.getMaCN().equalsIgnoreCase(ls[i].getMaCN())) {
+				return false;
+			}	
+		}
+		ls[count]= cn_new;
+		count++;
+		return true;
+		
+	}
+	
+	// so luong cong nhan trong danh sach
+	public int so_luong() {
+		return count;
+	}
+	
+	// cong nhan tren 200 san pham
+	public void loc() {
+		for(int i=0;i<count;i++) {
+			System.out.println("DANH SACH CONG NHAN 200 SAN PHAM");
+			System.out.println(CongNhan.getTieuDe());
+			System.out.println(ls[i].toString());
+		}
+	}
+	// sap xep
+	public void sort() {
+		for(int i =0;i<count-1;i++) {
+			for(int j=i+1;j<count;j++) {
+				if(ls[i].getmSoSP() > ls[j].getmSoSP()) {
+					CongNhan tam = ls[i];
+					ls[i]=ls[j];
+					ls[j]=tam;
+				}
+			}
+		}
+	}
+}

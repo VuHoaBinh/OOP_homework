@@ -1,0 +1,35 @@
+package bai4;
+
+public class Vehicle {
+	private String chuXe;
+	private String loaiXe;
+	private double triGiaXe;
+	private double xyLanh;
+	public String getChuXe() {
+		return chuXe;
+	}
+	public void setChuXe(String chuXe) {
+		this.chuXe = chuXe;
+	}
+	public String getLoaiXe() {
+		return loaiXe;
+	}
+	public void setLoaiXe(String loaiXe) {
+		this.loaiXe = loaiXe;
+	}
+	public double getTriGiaXe() {
+		return triGiaXe;
+	}
+	public void setTriGiaXe(double triGiaXe) {
+		this.triGiaXe = triGiaXe;
+	}
+	public double getXyLanh() {
+		return xyLanh;
+	}
+	public void setXyLanh(double xyLanh) {
+		this.xyLanh = xyLanh;
+	}
+	
+	
+	
+}

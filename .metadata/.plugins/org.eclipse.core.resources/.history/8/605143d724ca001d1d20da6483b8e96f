@@ -1,0 +1,24 @@
+package bai9;
+
+public class test_CongNhan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DanhSachCongNhan ls= new DanhSachCongNhan(10);
+
+		CongNhan cn1 = new CongNhan("123","vu","binh",25);
+		CongNhan cn2 = new CongNhan("123","vu","binh",25);
+		CongNhan cn3 = new CongNhan("123","vu","binh",25);
+		CongNhan cn4 = new CongNhan("123","vu","binh",25);
+
+		ls.themCN(cn1);
+		ls.themCN(cn2);
+		ls.themCN(cn3);
+		ls.themCN(cn4);
+		
+		System.out.println(CongNhan.getTieuDe());
+		for (CongNhan cn: )
+			System.out.println();
+	}
+
+}

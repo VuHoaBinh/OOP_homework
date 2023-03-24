@@ -1,0 +1,31 @@
+package bai8;
+
+import java.util.Scanner;
+
+public class test_CD {
+
+	public static void main(String[] args) {
+		try {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("nhap ngay:");
+
+			CD cd1 = new CD();
+			cd1.setMaCD("1234");
+			cd1.setTuaCD(null);
+			cd1.setDonGia(1123);
+			cd1.setSoBH(300);
+			cd1.inTieuDe();
+			cd1.setNgayPH(null);
+			
+			
+			
+			
+			System.out.println(sc.nextLine());
+			sc.close();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

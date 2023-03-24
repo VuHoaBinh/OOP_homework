@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n    <expression enabled\="true" text\="p"/>\r\n    <expression enabled\="true" text\="ma"/>\r\n    <expression enabled\="true" text\="mb"/>\r\n    <expression enabled\="true" text\="mc"/>\r\n    <expression enabled\="true" text\="a"/>\r\n    <expression enabled\="true" text\="p * (p - ma) * (p - mb) * (p - mc)"/>\r\n</watchExpressions>\r\n
