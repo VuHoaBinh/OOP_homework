@@ -1,0 +1,10 @@
+package bai4;
+
+public class test_Vehicle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
